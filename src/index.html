@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabusemar's Note</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="description" content="A note-taking application for managing your notes online.">
+</head>
+
+<body>
+  <!-- App Bar -->
+  <app-bar></app-bar>
+
+  <main class="container">
+    <!-- Formulir Tambah Catatan -->
+    <note-form></note-form>
+
+    <h2>Active Notes</h2>
+    <!-- Daftar Catatan -->
+    <section class="notes-list">
+      <!-- Item Catatan akan dimuat di sini -->
+    </section>
+
+    <h2>Archived Notes</h2>
+    <!-- Daftar Catatan Diarsipkan -->
+    <section class="archived-notes-list">
+      <!-- Item Catatan Diarsipkan akan dimuat di sini -->
+    </section>
+  </main>
+
+  <script src="scripts/data/dummy-data.js"></script>
+  <script src="scripts/components/app-bar.js"></script>
+  <script src="scripts/components/note-item.js"></script>
+  <script src="scripts/components/note-form.js"></script>
+  <script src="scripts/components/loading-indicator.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

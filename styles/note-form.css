@@ -1,0 +1,59 @@
+/* note-form.css */
+
+/* Gaya untuk elemen form dalam note-form */
+form {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Gaya untuk setiap div dalam form */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* Gaya untuk label dalam form */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Gaya untuk input teks dalam form */
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input.is-valid,
+textarea.is-valid {
+  border-color: #28a745;
+}
+
+input.is-invalid,
+textarea.is-invalid {
+  border-color: #dc3545;
+}
+
+button[type='submit'] {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+/* Efek hover untuk tombol submit */
+button[type='submit']:hover {
+  background-color: #3700b3;
+}

@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.notes-list,
+.archived-notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.note-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffff88;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-body {
+  font-size: 1rem;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.note-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.note-button {
+  cursor: pointer;
+  padding: 0.3rem 0.5rem; /* Adjusted padding */
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  margin: 0 0.2rem; /* Added margin */
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.archive-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.archive-btn:hover {
+  background-color: #0056b3;
+}
+
+.more-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.more-btn:hover {
+  background-color: #5a6268;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .notes-list,
+  .archived-notes-list {
+    grid-template-columns: 1fr;
+  }
+
+  .note-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .note-button {
+    margin: 0.1rem 0; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .note-buttons {
+    gap: 0.2rem;
+  }
+
+  .note-button {
+    margin: 0 0.1rem; /* Adjust margin for medium screens */
+  }
+}

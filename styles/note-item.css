@@ -1,0 +1,26 @@
+/* note-item.css */
+
+/* Gaya untuk elemen artikel dalam note-item */
+.note-item {
+  background-color: #ffff88;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem; /* Update margin */
+  box-sizing: border-box;
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Menggunakan Bootstrap card */
+.card {
+  margin: 0;
+  width: 100%;
+}
